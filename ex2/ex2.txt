@@ -1,0 +1,18 @@
+1) Il ne trouve pas de disque sur lequel il peut se boot.
+
+2) En résumé, cette commande crée une VM x86_64 avec 1 Go de RAM, un disque dur QCOW2 nommé "atoi.qcow2", un adaptateur réseau configuré pour accéder au réseau de 
+l'hôte avec une redirection de port du port 10022 de l'hôte vers le port 22 de la VM, et un périphérique réseau e1000 connecté à ce réseau.
+
+3) Je vois la VM se boot. Une fois cela terminé je me connecte avec le login atoi et le mdp toto puis j'arrive sur un shell.
+
+4) 
+a) 
+
+b) Le serveur SSH tourne sur la VM sur le port 22.
+
+5) On peut accéder à la VM avec la commande: ssh -p 10022 atoi@localhost
+
+
+
+
+

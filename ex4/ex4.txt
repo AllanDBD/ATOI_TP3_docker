@@ -1,0 +1,33 @@
+1) 
+a) root
+b) bin  boot  dev	etc  home  lib	lib64  media  mnt  opt	proc  root  run  sbin  srv  sys  tmp  usr  var
+
+c) Celui de ma machine contient les même choses avec cdrom, swapfile, lost+found, libx32 et lib32 en plus.
+
+
+
+2)
+a) Les différents arguments de la commande docker run sont :
+
+-ti: permet d'allouer un terminal interactif pour lancer l'application dans le conteneur
+--rm: indique à Docker de supprimer le conteneur une fois qu'il a terminé son exécution
+rancher/cowsay: C'est le nom de l'image Docker à utiliser pour créer le conteneur
+cowsay "Hello Docker": commande à exécuter à l'intérieur du conteneur. Dans ce cas, elle exécute le programme "cowsay" avec comme argument "Hello Docker"
+
+b) rancher/cowsay est le nom de l'image Docker provenant du référentiel Docker Hub appelé "rancher/cowsay". C'est l'image que Docker va télécharger et 
+exécuter pour créer le conteneur.
+
+c) La commande cowsay "Salut Linux" utilise le programme "cowsay" pour afficher le texte "Salut Linux" avec une représentation ASCII d'une vache qui dit ce texte. 
+
+d)  Le binaire cowsay se trouve à l'intérieur du conteneur. Lorsqu'on exécute la commande docker run, Docker crée un environnement isolé pour exécuter le 
+conteneur, et tous les binaires et fichiers nécessaires au fonctionnement de l'application (dans ce cas, "cowsay") sont inclus dans l'image Docker.
+
+e) Les différentes étapes lors du lancement du conteneur sont :
+
+> Téléchargement de l'image Docker "rancher/cowsay" si elle n'est pas déjà présente localement
+> Création d'un conteneur à partir de l'image téléchargée
+> Lancement du conteneur et exécution de la commande cowsay "Hello Docker"
+> Affichage du résultat de la commande dans le terminal
+
+f) La commande est plus rapide lors du second lancement car l'image Docker a été téléchargée et les étapes de création du conteneur ont déjà été effectuées lors du 
+premier lancement. 

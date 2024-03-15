@@ -1,0 +1,60 @@
+1) Connaissances de base:
+a) Une machine virtuelle (VM) est une émulation logicielle d'un ordinateur qui permet à un système d'exploitation (comme Windows, Linux, etc.) de fonctionner comme s'il s'exécutait sur un matériel physique distinct. Chaque VM dispose de ses propres ressources virtuelles, y compris un processeur, une mémoire, un stockage et des périphériques réseau.
+
+b) Un conteneur est une méthode de virtualisation au niveau du système d'exploitation qui permet d'exécuter plusieurs instances isolées d'applications sur un seul système hôte. Contrairement aux machines virtuelles, les conteneurs partagent le même noyau d'OS que l'hôte, ce qui les rend plus légers et plus rapides à démarrer.
+
+c) Voici un schéma comparatif des deux configurations:
+
+VM:
+  - Noyau Linux (hôte)
+  - Noyau Linux (invité)
+  - Application
+  - Limites: Utilise plus de ressources matérielles, nécessite une virtualisation complète de l'OS invité.
+
+Conteneur:
+  - Noyau Linux (hôte)
+  - Application
+  - Limites: Partage le noyau avec l'hôte, ne virtualise pas l'ensemble de l'OS, offre une isolation plus légère.
+
+
+d) Les avantages et inconvénients des machines virtuelles (VM) et des conteneurs varient en fonction des besoins spécifiques de déploiement et des exigences de l'application. Voici une comparaison générale :
+
+Avantages des machines virtuelles (VM) :
+1. Isolation complète
+2. Flexibilité des systèmes d'exploitation
+3. Sécurité renforcée 
+4. Indépendance de la plate-forme
+
+Inconvénients des machines virtuelles (VM) 
+1. Surcoût en ressources 
+2. Démarrage lent 
+3. Complexité de gestion 
+
+Avantages des conteneurs 
+1. Légèreté 
+2. Démarrage rapide 
+3. Évolutivité 
+4. Facilité de gestion 
+
+Inconvénients des conteneurs :
+1. Moins d'isolation 
+2. Limitations de la flexibilité
+3. Sécurité 
+
+i) Sécurité: Les VM offrent une isolation plus forte car elles virtualisent tout l'OS, tandis que les conteneurs partagent le même noyau, ce qui peut présenter des risques de sécurité si mal configurés.
+   
+ii) Performance: Les conteneurs sont généralement plus performants car ils évitent le surcoût de la virtualisation complète d'un OS.
+   
+iii) Utilisation: Les VM sont souvent utilisées pour l'isolation totale des applications et des environnements, tandis que les conteneurs sont utilisés pour le déploiement rapide et l'évolutivité des microservices.
+
+e) Scénarios justifiant l'utilisation de VM et/ou conteneurs:
+   1. Utilisation de VM: Déploiement d'applications nécessitant une isolation totale, tels que des environnements de développement ou de test complexes, ou des applications avec des exigences de sécurité strictes.
+   2. Utilisation de conteneurs: Déploiement d'applications conteneurisées pour une évolutivité rapide et des déploiements cohérents, tels que des microservices dans une architecture de conteneurs, ou pour des charges de travail où la performance est cruciale.
+
+2) Exercice critique:
+a) Faux. Les conteneurs sont généralement plus légers que les VM car ils partagent le même noyau et n'incluent que les bibliothèques et les fichiers nécessaires à l'exécution de l'application.
+b) Faux. Les conteneurs partagent le même noyau que l'hôte et ne peuvent pas changer de noyau.
+c) Vrai. Les conteneurs peuvent être exécutés avec différentes distributions Linux, tant qu'elles partagent le même noyau.
+d) Faux. Vous pouvez exécuter plusieurs VM sur un seul nœud physique, en fonction des ressources matérielles disponibles.
+e) Vrai. Les conteneurs partagent le même noyau que l'hôte, ce qui en fait un bon choix pour le développement de modules noyaux.
+f) Faux. Les VM ne nécessitent pas la même architecture que le système hôte, mais elles peuvent exécuter différents systèmes d'exploitation et architectures tant que l'hyperviseur le prend en charge.

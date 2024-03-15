@@ -1,0 +1,17 @@
+1)
+a) 
+> ti: alloue un terminal interactif pour lancer l'application dans le conteneur
+> p8080:80: mappe le port 8080 de l'hôte sur le port 80 du conteneur
+> nginx: nom de l'image Docker à utiliser pour créer le conteneur
+
+b) Voir image.png
+
+c) Le nom du conteneur est boring_bouman
+
+e) usr/share/nginx/html
+
+f) Voir image2.png
+
+2) Voir image3.png
+
+b) Le mot de passe est geek123.

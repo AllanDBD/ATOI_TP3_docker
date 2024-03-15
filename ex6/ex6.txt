@@ -1,0 +1,6 @@
+1)
+a) sudo docker run -ti -p6379:6379 redis
+
+b) Redis est un système de base de données open-source, de type clé-valeur, en mémoire et orienté vers la performance. Il est souvent utilisé comme base de données, 
+cache ou système de messagerie.
+
